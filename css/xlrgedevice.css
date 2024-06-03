@@ -1,46 +1,15 @@
-:root
-{
-    --base-color: #FFFFFF;
-    --primary-color-1: #F4EDE4;
-    --primary-color-2: #000000;
-    --call-to-action-color: #611F69;
+/* this css is for min 1200px */
 
-}
-*{
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-}
-div
-{
-    box-sizing: border-box;
-
-}
-body
-{
-    width: 100%;
-    box-sizing: border-box;
-    height: 100vh;
-    display: grid;
-}
-
-a
-{
-    text-decoration: none;
-    color: var(--primary-color-2);
-}
 nav
 {
-    justify-self: center;
     background-color: var(--base-color);
+    left:12%;
     position: fixed;
-    top: 10px;
+    top: 50px;
     display: flex;
     justify-content: space-around;
     align-content: center;   
     width: 75%;
-    margin: auto ;
     margin-bottom: 10px;
     border-radius: 50px;
     z-index: 1000;
@@ -71,12 +40,18 @@ nav
     align-content: center;
     border-radius: 1em;
     margin-right: 10px;
+    height: 70%;
 }
+
 #search-btn
 {
     background-color: transparent;
     border: none;
     align-self: center;
+}
+#signed-out
+{
+    align-items: center;
 }
 #start-btn
 {
@@ -99,6 +74,7 @@ nav
 .space
 {
     margin-bottom: 180px;
+    margin-top: 20px;
 }
 header
 {
@@ -168,7 +144,11 @@ header
 }
 .content
 {
-    z-index: 400;
+   
     background-color: var(--primary-color-1);
     width: 100%;
+}
+#lrge-dev-drop-nav
+{
+    display: none;
 }
