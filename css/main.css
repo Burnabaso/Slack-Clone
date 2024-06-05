@@ -14,7 +14,6 @@
     --primary-color-1: #F4EDE4;
     --primary-color-2: #000000;
     --call-to-action-color: #611F69;
-
 }
 *{
     padding: 0;
@@ -73,6 +72,7 @@ body
 #start-nav-btn
 {
     border-radius: 2em;
+    max-width: 200px;
 }
 
 #logo-nav
@@ -108,6 +108,7 @@ body
     padding-block: 1em;
     padding-inline: 0.5em;
     border-radius: 2em;
+    max-width: 147px;
 }
 #banner
 {
@@ -145,6 +146,7 @@ body
     color: var(--base-color);
     font-weight: 700;
     width: 100%;
+    
 }
 #logos
 {
@@ -202,11 +204,24 @@ body
     padding-top: 40%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
 }
 .content-container
 {
+    display: flex;
+    flex-wrap: wrap;
     border: 2px solid black;
     margin: 5% 0 ;
+}
+.animation-container
+{
+    border:2px solid red;
+    border-top-right-radius: 10em;
+    border-bottom-right-radius: 10em;
+   
+}
+.text-container
+{
+    border: 2px solid green;
+    margin-right: 5px;
 }
