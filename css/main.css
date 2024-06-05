@@ -1,0 +1,212 @@
+@media screen and (min-width:1086px) {
+    #drop-nav-menu
+    {
+        display: none;
+    }
+    #start-banner-btn
+    {
+        width: 20%;
+    }
+}
+:root
+{
+    --base-color: #FFFFFF;
+    --primary-color-1: #F4EDE4;
+    --primary-color-2: #000000;
+    --call-to-action-color: #611F69;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.1s ease-in-out;
+    box-sizing: border-box;
+}
+body
+{
+    width:auto;
+}
+#nav-bar
+{
+    
+    width: 95%;
+    min-width: 375px;
+    max-width: 1230px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    @media screen and (max-width:1085px) {
+        gap:0;
+        justify-content: space-between;
+    }
+}
+.nav-item  
+{
+    @media screen and (min-width: 1086px) {
+        display: inline-block;
+    };
+    display: none;
+}
+#signed-out 
+{
+    @media screen and (min-width: 1086px) {
+        display: flex;
+    };
+    display: none;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: end;
+    gap: 1em;
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 0;
+}
+#signed-out div
+{
+    width: fit-content;
+}
+
+#start-nav-btn
+{
+    border-radius: 2em;
+}
+
+#logo-nav
+{
+    
+    align-content: center;
+    width:20%;
+    max-width: 107px;
+    min-width: 85px;
+}
+#logo-nav img{
+    
+    width: 100%;
+    display: block;
+}
+#drop-nav-menu
+{
+    padding: 1em 2em;
+    background-color: var(--call-to-action-color);
+    color: var(--base-color);
+    font-weight: 700;
+    border-radius: 2em;
+    font-size: 1.1em;
+}
+#sales-nav-btn
+{
+    @media screen and (min-width:1218px) {
+        display: inline-block;
+    }
+    color: var(--call-to-action-color);
+    font-weight: 700;
+    border: 2px solid var(--call-to-action-color);
+    padding-block: 1em;
+    padding-inline: 0.5em;
+    border-radius: 2em;
+}
+#banner
+{
+    width: 90%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-inline: auto;
+    margin-top: 5vh;
+    height: 70vh;
+    max-height:350px;
+    min-height: 315px;
+   
+}
+#banner h1
+{
+    color: var(--primary-color-2);
+    text-align: center;
+}
+.clr-purple
+{
+    color: var(--call-to-action-color);
+}
+.banner-item
+{
+    margin-top: 4%;
+    margin-inline:auto;
+    text-align: center;
+}
+.started-btn
+{
+    padding: 1.3em ;
+    background-color: var(--call-to-action-color);
+    color: var(--base-color);
+    font-weight: 700;
+    width: 100%;
+}
+#logos
+{
+    max-width: 400px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-inline:auto ;
+}
+.banner-logo
+{
+  width: 20%;
+  align-content: center;
+}
+#nasa-logo
+{
+    width: 12%;
+}
+#uber-logo
+{
+    width: 10%;
+}
+#target-logo
+{
+    width: 12%;
+}
+#nyt-logo
+{
+    width: 10%;
+}
+.banner-logo img
+{
+    display: block;
+    width:100%;
+    object-fit: contain;
+}
+
+#frame-vid
+{
+    width: 80%;
+    max-width:800px;
+    margin-inline: center;
+}
+#frame-vid video
+{
+    display: block;
+    width: 100%;
+    object-position: center;
+}
+#main-content
+{
+    background-color: var(--primary-color-1);
+    margin-top: -30%;
+    padding-top: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.content-container
+{
+    border: 2px solid black;
+    margin: 5% 0 ;
+}
