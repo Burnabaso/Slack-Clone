@@ -195,33 +195,97 @@ body
 {
     display: block;
     width: 100%;
-    object-position: center;
+
 }
 #main-content
 {
     background-color: var(--primary-color-1);
     margin-top: -30%;
-    padding-top: 40%;
+    padding-top: 35%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
 }
 .content-container
 {
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid black;
     margin: 5% 0 ;
+    justify-self: center;
+    gap: 3em;
+    @media screen and (min-width:1026px) {
+        justify-content: center;
+        width: 100%;
+    }
+    width:100%;
+}
+#reverse-container
+{
+    flex-wrap: wrap-reverse;
+    justify-content: end;
+    @media screen and (min-width:1026px) {
+        justify-content: center;
+        width: 100%;
+    }
+    width: 100%;
 }
 .animation-container
 {
-    border:2px solid red;
-    border-top-right-radius: 10em;
-    border-bottom-right-radius: 10em;
    
+    margin-bottom: 2em;
+    align-self: center;
+    @media screen and (max-width:520px)
+    {
+        width:100%;
+    }
+    @media screen and (min-width:1026px) {
+        width: 60%;
+    }
+    max-width: 600px;
+    display: flex;
+    justify-content: end;
+    height: 80vh;
+}
+.animation-container picture
+{
+   
+}
+.animation-container video
+{
+    display: block;
+    object-position: end;
+    width: 100%;
+    object-fit: fill;
+}
+
+#reverse-container .text-container
+{
+    @media screen and (max-width:1030px)
+    {
+        padding-left: 2m;
+        padding-right: 0;    }
+    padding-left: 0;
+    padding-right: 2em;
 }
 .text-container
 {
-    border: 2px solid green;
+    padding-left: 2em;
+    align-content : center;
     margin-right: 5px;
+    @media screen and (max-width:1030px)
+    {
+        width:100%;
+        padding-left: 0;
+    }
+  width: 30%;
+  
+}
+.text-container h1
+{
+    margin-bottom: 0.5em;
+}
+.text-container p{
+    margin-bottom: 1em;
+    line-height: 1.7em;
 }

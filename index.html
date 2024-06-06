@@ -42,12 +42,16 @@
         </div>
     </div>
     <div class="banner-item" id="frame-vid">
-        <video src="Resources/videoframe.webm"></video>
+        <video  loop autoplay src="Resources/videoframe.webm"></video>
     </div>
     <div id="main-content">
         <div class="content-container" >
             <div class="animation-container" style="background-color: #E9B22A;">
-                <video src=""></video>
+                <video loop autoplay>
+                    <source src="Resources/content-vid/forlrgdev/video-container-1.webm" media="screen and (min-width:788px)">
+                    <source src="Resources/content-vid/forphones/video-container-1.webm" media="screen and (max-width:766px)">
+                    <source src="Resources/content-vid/forphones/video-container-1.webm">
+                </video>
             </div>
             <div class="text-container">
                 <h1>Move faster with your tools in one place</h1>
@@ -55,19 +59,25 @@
                 <a href="">Learn more about the Slack platform</a>
             </div>
         </div>
-        <div class="content-container">
-            <div class="animation-container" style="background-color: #2FB67E;">
-                <video src=""></video>
-            </div>
+        <div class="content-container" id="reverse-container">
             <div class="text-container">
                 <h1>Choose how you want to work</h1>
                 <p>In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. You can easily chat, send audio and video clips, or hop on a huddle to talk things out live.</p>
                 <a href="">Learn more about flexible communication</a>
             </div>
+            <div class="animation-container" style="background-color: #2FB67E;">
+                <video loop autoplay>
+                    <source src="Resources/content-vid/forlrgdev/video-container-2.webm" media="screen and (min-width:788px)">
+                    <source src="Resources/content-vid/forphones/video-container-2.webm" media="screen and (max-width:766px)">
+                </video>
+            </div>
         </div>
         <div class="content-container">
             <div class="animation-container" style ="background-color: #35C6F0;">
-                <video src=""></video>
+                <video autoplay loop>
+                    <source src="Resources/content-vid/forlrgdev/video-container-3.webm" media="screen and (min-width:788px)">
+                    <source src="Resources/content-vid/forphones/video-container-3.webm" media="screen and (max-width:766px)">
+                </video>
             </div>
             <div class="text-container">
                 <h1>Bring your team together</h1>
