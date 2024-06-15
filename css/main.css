@@ -14,6 +14,7 @@
     --primary-color-1: #F4EDE4;
     --primary-color-2: #000000;
     --call-to-action-color: #611F69;
+    --unimportant: #696969;
 }
 *{
     padding: 0;
@@ -245,12 +246,9 @@ body
     max-width: 600px;
     display: flex;
     justify-content: end;
-    height: 80vh;
-}
-.animation-container picture
-{
    
 }
+
 .animation-container video
 {
     display: block;
@@ -272,7 +270,7 @@ body
 {
     padding-left: 2em;
     align-content : center;
-    margin-right: 5px;
+    margin:1em;
     @media screen and (max-width:1030px)
     {
         width:100%;
@@ -288,4 +286,127 @@ body
 .text-container p{
     margin-bottom: 1em;
     line-height: 1.7em;
+}
+#enterprise
+{
+    margin-top: 3rem;
+}
+#enterprise-container
+{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-items: center;
+}
+#enterprise-container>*
+{
+    text-align: center;
+    margin-bottom: 1em;
+}
+#enterprise-container h3
+{
+    font-size:2em;
+}
+#enterprise-container p
+{
+    font-weight: bold;
+}
+#enterprise-btn
+{
+    background-color: var(--call-to-action-color);
+    color: var(--base-color);
+    padding: 1em 0;
+    width: 100%;
+    @media screen and (min-width:780px) {
+        width: 55%;
+    }
+}
+#sales-btn
+{
+    border: 1px solid var(--call-to-action-color);
+    padding: 1em 0;
+    color: var(--call-to-action-color);
+    width: 100%;
+    @media screen and (min-width:780px) {
+        width: 42%;
+    }
+}
+#enter-btn-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+#percentages-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4em 0;
+    width: 100%;
+    justify-content: center;
+}
+#percentages-container ul
+{
+    list-style-type: none;
+    width: 80%;
+    justify-self: center;
+}
+#percentages-container ul li
+{
+    text-align: center;
+    margin: 1em 0 4em 0;
+}
+.percent
+{
+    color: var(--call-to-action-color);
+    font-size: 3rem;
+    font-weight: 700;
+}
+.under-per{
+    
+    width: 50%;
+    margin: auto;
+}
+#vid-quote-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+#enter-vid{
+    width:90%;
+    @media screen and (min-width:1034px) {
+        width: 50%;
+    }
+    border-radius: 0 10em 10em 0 ;
+}
+#enter-vid *
+{
+    border-radius: inherit;
+    width: 100%;
+}
+#quote-container
+{
+    margin: 2em 1em;
+    width: 90%;
+    @media screen and (min-width:1034px) {
+        width: 40%;
+    }
+}
+#quote-container q
+{
+    font-style: italic;
+    @media screen and (min-width:1034px) {
+        font-size: 2em;
+    }
+    font-size: 1.1em;
+}
+#note
+{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    color: var(--unimportant);
 }
