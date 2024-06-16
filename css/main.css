@@ -480,7 +480,7 @@ a{
 @media screen and (min-width:1032px) {
     .image-container
     {
-        width: 23%;
+        width: 20%;
         margin-right: 2em;
     }
     .image-container:last-child
@@ -503,10 +503,7 @@ a{
     margin: auto;
     margin-top: 1em;
 }
-#bottom-sec
-{
 
-}
 #arc-design
 {
     background-color: var(--call-to-action-color);
@@ -626,4 +623,66 @@ a{
 hr
 {
     color: var(--unimportant);
+}
+.map-container
+{
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    margin: auto;
+    padding: 1em;
+    font-weight: 700;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#site-map-full
+{
+    display: none;
+    flex-wrap: nowrap;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.map-container-lrg
+{
+    width: 16.2% ;
+    margin-inline: auto;
+}
+.map-container-lrg p
+{
+    padding-bottom: 1em;
+}
+#site-map-logo
+{
+    width: 7%;
+    margin-left: 1em;
+    box-sizing: border-box;
+    display: flex;
+    justify-items: center;
+}
+#site-map-logo svg
+{
+    width: 100%;
+}
+
+@media screen and (min-width:1084px) {
+    #site-map
+    {
+        display: none;
+    }
+    #site-map-full
+    {
+        display: flex;
+    }   
+}
+#bckclrnews
+{
+    background-color: var(--primary-color-1);
+}
+@media screen and (min-width:1366px) {
+    #site-map-full,hr,#footer,#enterprise,#newsletter
+    {
+        width: 80%;
+        margin-inline: auto; 
+    }
+   
 }
