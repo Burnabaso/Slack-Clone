@@ -3,10 +3,22 @@
     {
         display: none;
     }
+
+   
+}
+@media screen and (min-width: 1025px) {
     #start-banner-btn
     {
         width: 20%;
     }
+    
+}
+@media screen and (min-width:766px) {
+    #percentages-container ul li 
+    {
+        width:32%
+    }
+    
 }
 :root
 {
@@ -351,8 +363,11 @@ body
 #percentages-container ul
 {
     list-style-type: none;
-    width: 80%;
+    width: 100%;
     justify-self: center;
+    display: inherit;
+    flex-wrap: inherit;
+    justify-content: center;
 }
 #percentages-container ul li
 {
