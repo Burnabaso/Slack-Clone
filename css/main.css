@@ -39,6 +39,9 @@ body
 {
     width:auto;
 }
+a{
+    text-decoration: none;
+}
 #nav-bar
 {
     
@@ -424,4 +427,18 @@ body
     width: 90%;
     margin: auto;
     color: var(--unimportant);
+}
+#newsletter
+{
+    background-color: var(--primary-color-1);
+    margin-top: 2rem;
+    padding-top: 3em;
+    
+}
+#newsletter-container
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
