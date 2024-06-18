@@ -61,16 +61,10 @@ a{
 }
 .nav-item  
 {
-    @media screen and (min-width: 1086px) {
-        display: inline-block;
-    };
     display: none;
 }
 #signed-out 
 {
-    @media screen and (min-width: 1086px) {
-        display: flex;
-    };
     display: none;
     flex-wrap: nowrap;
     align-items: center;
@@ -80,6 +74,16 @@ a{
     margin-left: 10%;
     margin-right: 0;
 }
+@media screen and (min-width: 1086px) {
+    .nav-item
+    {
+        display: inline-block;
+    }
+    #signed-out
+    {
+        display: flex;
+    }
+};
 #signed-out div
 {
     width: fit-content;
@@ -89,8 +93,8 @@ a{
 {
     border-radius: 2em;
     max-width: 200px;
+    text-align: center;
 }
-
 #logo-nav
 {
     
@@ -125,6 +129,27 @@ a{
     padding-inline: 0.5em;
     border-radius: 2em;
     max-width: 147px;
+}
+@media screen and (min-width:1084px) {
+    #nav-bar
+    {
+        position: fixed;
+        top: 0.5rem;
+       
+        background-color: var(--base-color);
+        left: 1em;
+        right: 1em;
+        border-radius: 3em;
+        box-shadow: 0rem 0rem 1rem 0.5rem var(--call-to-action-color);
+    }
+    #banner::before
+    {
+       content: "";
+        width: 100%;
+        height: 10vh;
+        margin-bottom: 5em;
+    }
+   
 }
 #banner
 {
@@ -230,20 +255,12 @@ a{
     margin: 5% 0 ;
     justify-self: center;
     gap: 3em;
-    @media screen and (min-width:1026px) {
-        justify-content: center;
-        width: 100%;
-    }
     width:100%;
 }
 #reverse-container
 {
     flex-wrap: wrap-reverse;
     justify-content: end;
-    @media screen and (min-width:1026px) {
-        justify-content: center;
-        width: 100%;
-    }
     width: 100%;
 }
 .animation-container
@@ -255,15 +272,22 @@ a{
     {
         width:100%;
     }
-    @media screen and (min-width:1026px) {
-        width: 60%;
-    }
     max-width: 600px;
     display: flex;
     justify-content: end;
    
 }
-
+@media screen and (min-width:1026px) {
+    .content-container,#reverse-container
+    {
+        justify-content: center;
+        width: 100%;
+    }
+    .animation-container
+    {
+        width: 60%;
+    }
+}
 .animation-container video
 {
     display: block;
@@ -274,10 +298,6 @@ a{
 
 #reverse-container .text-container
 {
-    @media screen and (max-width:1030px)
-    {
-        padding-left: 2m;
-        padding-right: 0;    }
     padding-left: 0;
     padding-right: 2em;
 }
@@ -286,13 +306,19 @@ a{
     padding-left: 2em;
     align-content : center;
     margin:1em;
-    @media screen and (max-width:1030px)
+    width: 30%;
+}
+@media screen and (max-width: 1030px) {
+    #reverse-container .text-container
+    {
+        padding-left: 2m;
+        padding-right: 0;
+    }
+    .text-container
     {
         width:100%;
         padding-left: 0;
     }
-  width: 30%;
-  
 }
 .text-container h1
 {
@@ -334,9 +360,6 @@ a{
     color: var(--base-color);
     padding: 1em 0;
     width: 100%;
-    @media screen and (min-width:780px) {
-        width: 55%;
-    }
 }
 #sales-btn
 {
@@ -344,7 +367,14 @@ a{
     padding: 1em 0;
     color: var(--call-to-action-color);
     width: 100%;
-    @media screen and (min-width:780px) {
+}
+@media screen and (min-width: 780px) {
+    #enterprise-btn
+    {
+        width: 55%;
+    }
+    #sales-btn
+    {
         width: 42%;
     }
 }
@@ -395,9 +425,6 @@ a{
 }
 #enter-vid{
     width:90%;
-    @media screen and (min-width:1034px) {
-        width: 50%;
-    }
     border-radius: 0 10em 10em 0 ;
 }
 #enter-vid *
@@ -409,17 +436,27 @@ a{
 {
     margin: 2em 1em;
     width: 90%;
-    @media screen and (min-width:1034px) {
-        width: 40%;
-    }
 }
 #quote-container q
 {
     font-style: italic;
-    @media screen and (min-width:1034px) {
+   
+    font-size: 1.1em;
+}
+@media screen and (min-width: 1034px) {
+    #enter-vid
+    {
+        width: 50%;
+
+    }
+    #quote-container
+    {
+        width: 40%;
+    }
+    #quote-container q
+    {
         font-size: 2em;
     }
-    font-size: 1.1em;
 }
 #note
 {
